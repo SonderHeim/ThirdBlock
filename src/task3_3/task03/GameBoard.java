@@ -1,4 +1,4 @@
-package thirdlesson.thirdtask;
+package task3_3.task03;
 
 public class GameBoard {
     public static void main(String[] args) {

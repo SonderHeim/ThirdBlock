@@ -1,4 +1,4 @@
-package thirdlesson.secondtask;
+package task3_3.task02;
 
 public class MatrixTransform {
     public static void main(String[] args) {

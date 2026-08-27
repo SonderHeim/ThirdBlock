@@ -1,6 +1,4 @@
-package thirdlesson.firsttask;
-
-import java.util.Arrays;
+package task3_3.task01;
 
 public class MatrixOps {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package thirdlesson.fourthtask;
+package task3_3.task04;
 
 public class PascalTriangle {
 

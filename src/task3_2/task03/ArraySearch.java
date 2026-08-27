@@ -1,4 +1,4 @@
-package secondlesson.thirdtask;
+package task3_2.task03;
 
 import java.util.Arrays;
 

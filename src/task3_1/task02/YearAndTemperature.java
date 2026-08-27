@@ -1,4 +1,4 @@
-package firstlesson.secondtask;
+package task3_1.task02;
 
 public class YearAndTemperature {
     public static boolean isLeapYear(int year) {

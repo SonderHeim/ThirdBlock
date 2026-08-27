@@ -1,4 +1,4 @@
-package firstlesson.firsttask;
+package task3_1.task01;
 
 public class MathUtils {
     public static int min(int a, int b) {

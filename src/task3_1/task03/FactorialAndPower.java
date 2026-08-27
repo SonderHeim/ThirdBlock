@@ -1,4 +1,4 @@
-package firstlesson.thirdtask;
+package task3_1.task03;
 
 public class FactorialAndPower {
     public static long factorial(int n) {
