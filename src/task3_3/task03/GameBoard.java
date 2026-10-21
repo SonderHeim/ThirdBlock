@@ -12,10 +12,10 @@ public class GameBoard {
         attackOnBoard(board);
     }
 
-    public static void fillBoard(char[][] board){
+    public static void fillBoard(char[][] board) {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
-                if ((i + j) % 2 != 0){
+                if ((i + j) % 2 != 0) {
                     board[i][j] = '#';
                 } else {
                     board[i][j] = '.';
@@ -24,7 +24,7 @@ public class GameBoard {
         }
     }
 
-    public static void outBoard(char[][] board){
+    public static void outBoard(char[][] board) {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
                 System.out.printf("%4c", board[i][j]);
@@ -33,22 +33,26 @@ public class GameBoard {
         }
     }
 
-    public static void setQueensFirstRow(char[][] board){
+    public static void setQueensFirstRow(char[][] board) {
         for (int i = 0; i < board[0].length; i++) {
             board[0][i] = 'Q';
         }
     }
 
-    public static void attackOnBoard(char[][] board){
+    public static void attackOnBoard(char[][] board) {
+        System.out.println("Проверка атак ферзей:");
+
         for (int i = 0; i < board.length; i++) {
-            int countQueens = 0;
             for (int j = 0; j < board[i].length; j++) {
-                if (board[i][j] == 'Q'){
-                    countQueens++;
+                if (board[i][j] == 'Q') {
+                    for (int k = j + 1; k < board[i].length; k++) {
+                        if (board[i][k] == 'Q') {
+                            System.out.println("Ферзи на позициях (" + i + ", " + j +
+                                    ") и (" + i + ", " + k + ") бьют друг друга.");
+                        }
+                    }
                 }
             }
-            if (countQueens > 1)
-                System.out.println("Ферзи бьют друг друга!");
         }
     }
 }
